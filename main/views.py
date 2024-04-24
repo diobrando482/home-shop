@@ -9,7 +9,7 @@ def index(request):
         'content':'главная страница home которую я создал в словаре с помощью placeholder',
         'list': ['first','second'],
         'dict': {'first': 1},
-        'is_authenticated':False
+        'is_authenticated':True
     }    
     
     return render(request,'main/index.html',context)
